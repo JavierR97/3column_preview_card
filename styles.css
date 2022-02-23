@@ -1,0 +1,128 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lexend Deca', sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 55%;
+  height: 60%;
+  min-height: 392px;
+}
+
+.heading {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 30px;
+}
+
+.heading, img {
+  margin-left:3px;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 100%;
+  padding: 20px;
+  color: white;
+}
+
+.section-content p{
+  line-height: 1.5rem;
+}
+
+.section-content.green{
+  background-color:hsl(179, 100%, 13%);
+  border-radius: 0 5px 5px 0;
+}
+.section-content.lightblue {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.section-content.orange {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 5px 0 0 5px;
+}
+
+img {
+  max-width: 3.5rem;
+}
+
+.btn {
+  padding: .7em;
+  border: none;
+  outline: none;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 200px;
+}
+
+.btn.btn-sedans {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn.btn-suvs {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn.btn-luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width:375px) {
+  .main-container {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+}
